@@ -1,0 +1,40 @@
+body {
+font-family: 'Arial';
+background-color: lightsteelblue;
+}
+#header1 {
+    background-color: lightblue;
+    padding: 15px;
+}
+h1{
+text-align: center;
+color: white;
+}
+img {
+    position: left;
+    width: 500px;
+    height: 300px;
+
+}
+#header2{
+   width: 200px;
+   height: 100px;
+   text-align: center;
+   position: fixed;
+}
+th{
+    border: 3px solid whitesmoke;
+    color: white;
+}
+#main2 {
+float: left;
+}
+button{
+    color: blue;
+    background-color: beige;
+    position: fixed;
+
+}
+#main3{
+    float: right;
+}
