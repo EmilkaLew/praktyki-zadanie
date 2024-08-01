@@ -1,0 +1,73 @@
+body {
+font-family: 'Arial';
+background-color: lightsteelblue;
+}
+#header1 {
+    background-color: lightblue;
+    padding: 15px;
+}
+h1{
+text-align: center;
+color: white;
+}
+img {
+    position: left;
+    width: 500px;
+    height: 300px;
+
+}
+#header2{
+   width: 200px;
+   text-align: center;
+   margin: 20px 0px;
+   
+}
+th{
+    border: 3px solid whitesmoke;
+    color: white;
+    background-image: url('C:/Users/emilc/OneDrive/Pulpit/praktyki/palmy.jpeg');
+    object-fit: cover;
+    background-size: cover;
+    min-width: 200px;
+    height: 150px;
+   
+}
+
+th a {
+    color: white;
+    text-decoration: none;
+}
+#main2 {
+    background-image: url('C:/Users/emilc/OneDrive/Pulpit/praktyki/morze.jpg');
+    display: flex;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 50px;
+    align-items: center;
+    flex-direction: column;
+}
+#main3 {
+    background-image: url('C:/Users/emilc/OneDrive/Pulpit/praktyki/morze2.jpg');
+    display: flex;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 50px;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    color: blue;
+    background-color: beige;
+
+
+}
+#środek{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
