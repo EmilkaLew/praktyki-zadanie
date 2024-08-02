@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <style>
+        body {
+    font-family: 'Arial';
+    background-color: lightskyblue;
+    }
+    img{
+        height: auto;
+        width: 100%;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        gap: 10px;
+    }
+    .main2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        gap: 10px;
+    }
+    .form1{ 
+        background-color: rgba(0, 0, 128, 0.377); 
+        height: 430px; 
+        padding: 15px; 
+        margin-bottom: 100px;
+		margin:0 auto;
+		width:550px;
+		position:relative;
+		top:50px;
+		border:1px solid #262626;
+    }
+    label{
+	    width:100%;
+	    display: flex;	
+	    padding: 10px 0px;
+	}
+    .form1 label span {
+		display: block;
+		color:#bbbbbb;
+		font-size:12px;
+		float:left;
+		width:100px;
+		text-align:right;
+		padding:5px 20px 0 0;
+	}
+        
+    .button {
+        background-color: rgba(0, 0, 128, 0.514);		
+        margin:20px 0px;
+	    padding:4px 7px;	
+	    border:1px;
+	    width:100px;
+	}
+    footer{
+        color: white;
+        text-decoration: none;
+        background-color: rgba(0, 0, 128, 0.676);
+        padding: 20px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <img src="opis3.jpg" alt="">
+            <h2> Dlaczego warto wybrać ten hotel </h2>
+            <p> Greckie wakacje w kameralnej atmosferze? Dlaczego nie! Malownicze otoczenie, zielony ogród, basen i nowocześnie urządzone pokoje – to największe atuty hotelu. Przygotowany z myślą o dorosłych, oferuje bary i restaurację serwującą dania kuchni greckiej i międzynarodowej, a fantastyczna piaszczysta plaża Marmari z wydmami znajdująca się w odległości kilkuminutowego spaceru od hotelu jest idealnym miejscem na błogi relaks w promieniach greckiego słońca. </p>
+        </div>
+        <div>
+            <img src="plaża3.jpg" alt="">
+            <h2>Plaża hotelowa</h2>
+            <li> Marmari </li>
+            <li>publiczna</li>
+            <li>piaszczysta</li>
+            <li>łagodne zejście do morza</li>
+            <li>ok. 700 m od hotelu</li>
+    </div>
+    </div>
+   <div class="main2">
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.6058516730186!2d27.15228487734051!3d36.87585216342885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bdfd46117a317b%3A0x185636f582bd80fc!2zzp7Otc69zr_OtM6_z4fOtc6vzr8gU3VtbWVyIFZpbGxhZ2Ugb2YgSGlwcG9jcmF0ZXMgLSBBZHVsdHMgb25seS4!5e0!3m2!1spl!2spl!4v1722583580245!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>  
+    <div class="main3">
+        <form>
+            <h3>Formularz kontaktowy</h3>
+            <label>Imię:</label>
+            <input type="text" class="p1"><br>
+            <label>Nazwisko:</label>
+            <input type="text" class="p2"><br>
+            <label>E-mail:</label>
+            <input type="text" class="p3"><br>
+            <label>Napisz do nas:</label>
+            <textarea name="Napisz do nas" class="1"></textarea>
+            <br>
+        <input type="button" class="button" value="Prześlij"> 
+        <input type="reset" class="button" value="Resetuj">
+        </form>
+    </div>   
+   </div>
+   <footer>
+    <h4>E-mail: biuropodróży_travelbag@gmail.com Kontakt: +48 678903245</h4>
+</footer>
+</body>
+</html>

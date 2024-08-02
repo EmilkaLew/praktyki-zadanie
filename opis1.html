@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <style>
+        body {
+    font-family: 'Arial';
+    background-color: lightskyblue;
+    }
+    img{
+        height: auto;
+        width: 100%;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .main2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        gap: 10px;
+    }
+
+    footer{
+        color: white;
+        text-decoration: none;
+        background-color: rgba(0, 0, 128, 0.676);
+        padding: 20px;
+        text-align: center;
+    }
+    .form1{ 
+        background-color: rgba(0, 0, 128, 0.377); 
+        height: 430px; 
+        padding: 15px; 
+        margin-bottom: 100px;
+		margin:0 auto;
+		width:550px;
+		position:relative;
+		top:50px;
+		border:1px solid #262626;
+    }
+    label{
+	    width:100%;
+	    display: flex;	
+	    padding: 10px 0px;
+	}
+    .form1 label span {
+		display: block;
+		color:#bbbbbb;
+		font-size:12px;
+		float:left;
+		width:100px;
+		text-align:right;
+		padding:5px 20px 0 0;
+	}
+        
+    .button {
+        background-color: rgba(0, 0, 128, 0.514);		
+        margin:20px 0px;
+	    padding:4px 7px;	
+	    border:1px;
+	    width:100px;
+	}
+    .reset{
+        background-color: rgba(0, 0, 128, 0.514);
+        margin:20px 0px;
+		padding:4px 7px;
+		border:1px;
+        width: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <img src="opis1.jpg" alt="">
+            <h2> Dlaczego warto wybrać ten hotel </h2>
+            <p> Hotel tylko dla Gości powyżej 12. roku życia w znanym kurorcie Marsa Alam, jest doskonałą opcją dla wszystkich, którzy cenią sobie komfortowy wypoczynek. Na miejscu 2 restauracje, 3 bary, 3 baseny, a także taras z zapierającym dech widokiem na morze. W ciągu dnia możesz spędzić czas na hotelowej plaży, poćwiczyć jogę lub pilates oraz zagrać w siatkówkę plażową, a wieczorem zaszaleć podczas animacji dla dorosłych. Po aktywnym dniu spędzonym w promieniach egipskiego słońca, zrelaksuj się w przestronnych i nowocześnie urządzonych pokojach. </p>
+        </div>
+        <div>
+            <img src="plaża1.jpg" alt="">
+        
+            <h2>Plaża hotelowa</h2>
+           <li> bezpośrednio przy hotelu </li>
+           <li>piaszczysto-żwirowa</li>
+           <li>blisko brzegu rafa koralowa</li>
+           <li>zalecane obuwie ochronne</li>
+           <li>bezpłatne parasole, leżaki, materace i ręczniki</li>
+        </div>     
+    </div>
+    <div class="main2">  
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0997850037593!2d34.685896576471364!3d25.434927277558554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15b4a5f504bdd4fd%3A0x304b7faf56118218!2sCasa%20Blue%20Resort!5e0!3m2!1spl!2spl!4v1722512381762!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>        
+        <div class="main3">
+            <form>
+                <h3>Formularz kontaktowy</h3>
+                <label>Imię:</label>
+                <input type="text" class="p1"><br>
+                <label>Nazwisko:</label>
+                <input type="text" class="p2"><br>
+                <label>E-mail:</label>
+                <input type="text" class="p3"><br>
+                <label>Napisz do nas:</label>
+                <textarea name="Napisz do nas" class="1"></textarea>
+                <br>
+            <input type="button" class="button" value="Prześlij"> 
+            <input type="reset" class="reset" value="Resetuj">
+            </form>
+        </div>   
+    </div>
+    <footer>
+        <h4>E-mail: biuropodróży_travelbag@gmail.com Kontakt: +48 678903245</h4>
+    </footer>
+</body>
+</html>
