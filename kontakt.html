@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    body{
+    font-family: 'Arial';
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url('5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 100vh;
+    }
+    .form1{ 
+        background-color: rgba(0, 0, 128, 0.377); 
+        height: 430px; 
+        padding: 15px; 
+        margin-bottom: 100px;
+		margin:0 auto;
+		width:550px;
+		top:50px;
+		border:1px solid #262626;
+        color: white;
+        border-radius: 8px;
+    }
+    label{
+	    width:100%;
+	    display: flex;	
+	    padding: 10px 0px;
+	}
+    .form1 label span {
+		display: block;
+		color:#bbbbbb;
+		font-size:12px;
+		float:left;
+		width:100px;
+		text-align:right;
+		padding:5px 20px 0 0;
+	}
+        
+    .button {
+        background-color: rgba(0, 0, 128, 0.514);		
+        margin:20px 0px;
+	    padding:4px 7px;	
+	    border:1px;
+	    width:100px;
+        color: white;
+	}
+    </style>
+</head>
+<body>
+    <div class="form1">
+        <form>
+            <h2>Formularz kontaktowy: </h2>
+            <label>Imię:</label>
+            <input type="text" class="wpis"><br>
+            <label>Nazwisko:</label>
+            <input type="text" class="wpis"><br>
+            <label>E-mail:</label>
+            <input type="text" class="wpis"><br>
+            <label>Napisz do nas:</label>
+            <textarea name="Napisz do nas" class="1"></textarea>
+            <label>Kierunek:</label>
+        <select class="opcja">
+            <option value="Wybierz">Wybierz kierunek</option>
+            <option value="Albania">Albania</option>
+            <option value="Grecja">Grecja</option>
+            <option value="Turcja">Turcja</option>
+            <option value="Seszele">Seszele</option>
+        </select><br>
+        <input type="button" class="button" value="Prześlij">
+        <input type="reset" class="button" value="Resetuj">
+        </form>
+    </div>
+</body>
+</html>

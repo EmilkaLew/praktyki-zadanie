@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    body{
+    font-family: 'Arial';
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url('5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 100vh;
+
+    }
+    .form1{ 
+        background-color: rgba(0, 0, 128, 0.557); 
+        height: 430px; 
+        padding: 15px; 
+        margin-bottom: 100px;
+		margin:0 auto;
+		width:500px;
+		top:50px;
+		border:1px solid #262626;
+        color: white;
+        border-radius: 8px;
+    }
+    label{
+	   
+	    display: flex;	
+	    padding: 10px 0px;
+	}
+    .form1 label span {
+		display: block;
+		color:#bbbbbb;
+		font-size:12px;
+		float:left;
+		width:100px;
+		text-align:right;
+		padding:5px 20px 0 0;
+	}  
+    .form1 a{
+        text-decoration: none;
+        color: #a8d0ff;
+        font-weight: 700;
+    }    
+    .button {
+        background-color: rgba(0, 0, 128, 0.514);		
+        margin:20px 0px;
+	    padding:4px 7px;	
+	    border:1px;
+	    width:100px;
+        color: white;
+	}
+    </style>
+</head>
+<body>
+    <div class="form1">
+        <form>
+            <h2>Logowanie: </h2>
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Hasło:</label>
+            <input type="text" id="password" name="password">
+            <p><a href="#">Zapomniałeś hasła?</a></p>
+            <p><a href="#">Zarejestruj się</a></p>
+            <div class="lower">
+        <input type="button" class="button" value="Prześlij">
+        <input type="reset" class="button" value="Resetuj">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
