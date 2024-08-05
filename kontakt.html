@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
     <style>
     body{
     font-family: 'Arial';
@@ -10,34 +10,26 @@
     background-repeat: no-repeat;
     background-size: cover;  
     height: 100vh;
+    margin: 0;   
+    }
+    .f{
+        padding-top: 110px;
     }
     .form1{ 
         background-color: rgba(0, 0, 128, 0.377); 
         height: 430px; 
         padding: 15px; 
-        margin-bottom: 100px;
-		margin:0 auto;
+        margin: 0px auto;
 		width:550px;
-		top:50px;
-		border:1px solid #262626;
         color: white;
         border-radius: 8px;
+
     }
     label{
 	    width:100%;
 	    display: flex;	
 	    padding: 10px 0px;
-	}
-    .form1 label span {
-		display: block;
-		color:#bbbbbb;
-		font-size:12px;
-		float:left;
-		width:100px;
-		text-align:right;
-		padding:5px 20px 0 0;
-	}
-        
+	}     
     .button {
         background-color: rgba(0, 0, 128, 0.514);		
         margin:20px 0px;
@@ -46,31 +38,74 @@
 	    width:100px;
         color: white;
 	}
+    h2{
+        text-align: center;
+    }
+    textarea{
+        resize: vertical;
+        width: 100%;
+        margin: 10px 0px;    
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.315);
+        box-sizing: border-box;
+        padding: 10px;
+        font: inherit;
+    }
+    input{
+            width: 100%;
+            margin: 10px 0px;       
+            border-radius: 5px;
+            border: 2px solid rgba(0, 0, 0, 0.315);
+            box-sizing: border-box;
+            padding: 10px;
+    }
+    select{
+        width: 100%;
+        border-radius: 5px;
+        margin: 10px 0px;
+        border: 2px solid rgba(0, 0, 0, 0.315);
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    @media only screen and (max-width: 991px){
+    .form1{
+        width: 340px;     
+        height: 450px; 
+    }
+    .button{
+        width: 70px;
+        height: 45px;
+        margin: 10px 0px;;
+    }
+    .f{
+        padding-top: 18px;
+    }
+}
     </style>
 </head>
 <body>
-    <div class="form1">
-        <form>
-            <h2>Formularz kontaktowy: </h2>
-            <label>Imię:</label>
-            <input type="text" class="wpis"><br>
-            <label>Nazwisko:</label>
-            <input type="text" class="wpis"><br>
-            <label>E-mail:</label>
-            <input type="text" class="wpis"><br>
-            <label>Napisz do nas:</label>
-            <textarea name="Napisz do nas" class="1"></textarea>
-            <label>Kierunek:</label>
-        <select class="opcja">
-            <option value="Wybierz">Wybierz kierunek</option>
-            <option value="Albania">Albania</option>
-            <option value="Grecja">Grecja</option>
-            <option value="Turcja">Turcja</option>
-            <option value="Seszele">Seszele</option>
-        </select><br>
-        <input type="button" class="button" value="Prześlij">
-        <input type="reset" class="button" value="Resetuj">
-        </form>
+    <div class="f">
+        <div class="form1">
+            <form>
+                <h2>Formularz kontaktowy: </h2>
+                <input type="text" placeholder="Imię..." class="p1"><br>
+                <input type="text" placeholder="Nazwisko..." class="p2"><br>
+                <input type="text" placeholder="E-mail..." class="p3"><br>
+                <textarea name="Napisz do nas" placeholder="Napisz do nas..." class="1"></textarea>
+                <br>
+            <select class="opcja">
+                <option>Wybierz kierunek</option>
+                <option value="Albania">Albania</option>
+                <option value="Grecja">Grecja</option>
+                <option value="Turcja">Turcja</option>
+                <option value="Seszele">Seszele</option>
+            </select><br>
+            <input type="button" class="button" value="Prześlij">
+            <input type="reset" class="button" value="Resetuj">
+            </form>
+        </div>
     </div>
+    
 </body>
 </html>

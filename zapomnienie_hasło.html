@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    body{
+    font-family: 'Arial';
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url('5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 100vh;
+    }
+    .form1{ 
+        background-color: rgba(0, 0, 128, 0.377); 
+        height: 250px; 
+        padding: 20px; 
+		margin:0 auto;
+		width:500px;
+        color: white;
+        border-radius: 8px;
+    }
+    .f{
+        padding-top: 150px;
+    }
+    label{	   
+	    display: flex;	
+	    padding: 10px 0px;
+	}    
+    .button {
+        background-color: rgba(0, 0, 128, 0.514);		
+        margin:20px 0px;
+	    padding:4px 7px;	
+	    border:1px;
+	    width:100px;
+        color: white;
+	}
+    h2{
+        text-align: center;
+    }
+    input{
+            width: 100%;
+            margin: 10px 0px;       
+            border-radius: 5px;
+            border: 2px solid rgba(0, 0, 0, 0.315);
+            box-sizing: border-box;
+            padding: 10px;
+    }
+
+    @media only screen and (max-width: 991px){
+    .form1{
+        width: 300px;
+        height: 250px; 
+    }
+    .button{
+        width: 70px;
+        height: 45px;
+    }
+    .f{
+        padding-top: 50px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="f">
+        <div class="form1">
+            <form>
+                <h2>Zapomniałeś hasła </h2>
+                <input type="text" placeholder="Podaj swój e-mail..." class="p1"><br>
+                <div class="lower">
+            <input type="button" class="button" value="Wyślij">
+            <input type="reset" class="button" value="Resetuj">
+            </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

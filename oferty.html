@@ -5,25 +5,22 @@
     <meta charset="UTF-8">
     <style>
         body {
-        font-family: 'Arial';
-        background-color: lightskyblue;
+        font-family: 'Arial';   
         }
         body::before{
         content: ' ';
         display: block;
-        background-image: url('5.jpg');
+        background-image: url('pt.jpg');
         background-size:cover ;
         z-index: -1;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.3;
+        opacity: 0.7;
         position: fixed;
-    }
-        h2{
+        }
+        .tekst {
             text-align: center;
         }
         img{
@@ -42,6 +39,7 @@
             width: 1100px;
             height: 200px;
             justify-content: center;
+            
         }
         .main{
         display: grid;
@@ -61,32 +59,50 @@
         
         #o4{
             background-image: url('seszele.jpg');
-        }
-        
-        h2 a {
+        }     
+        .tekst a {
             color: white;
+            font-size: 30px;
+            font-weight: 600;
             text-decoration: none;
             background-color: #000000aa;
             padding: 20px;
+        }
+        @media only screen and (max-width: 991px){
+        .main{
+            overflow: auto;
+            margin: 0px 15px;
+        }
+        .oferta{
+            width: 100vw;
+            height: 100px;
+            margin: 30px 0px;         
+        }
+        .tekst a{
+            padding: 1px;     
+            font-size: 22px;       
+        }
+        .tekst{
+            padding: 20px;
+        }
         }
         </style>
 </head>
 <body>
     <div class="main">
         <div class="oferta" id="o1">
-            <h2><a href="opis1.html">Hotel Casa Blue Luxury Resort ***** 3 899 zł /os.</a></h2>
+            <div class="tekst"><a href="opis1.html">Hotel Casa Blue Luxury Resort ***** 3899 zł /os.</a></div>
            </div>
-        
            <div class="oferta" id="o2">
-            <h2><a href="opis2.html">Hotel Fafa Premium ***** 1 696 zł /os.</a></h2>
+            <div class="tekst"><a href="opis2.html">Hotel Fafa Premium ***** 1696 zł /os.</a></div>
            </div>
         
            <div class="oferta" id="o3">
-            <h2><a href="opis3.html">Hotel Summer Village of Hippocrates ***** 2 559 zł /os.</a></h2>
+            <div class="tekst"><a href="opis3.html">Hotel Summer Village of Hippocrates ***** 2559 zł /os.</a></div>
            </div>
         
            <div class="oferta" id="o4">
-            <h2><a href="opis4.html">Hilton Seychelles Labriz Resort & Spa ***** 6 823 zł /os</a></h2>
+            <div class="tekst"><a href="opis4.html">Hilton Seychelles Labriz Resort Spa ***** 6823 zł /os.</a></div>
            </div>
     </div>
 </body>

@@ -1,88 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="opisy.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-    <style>
-        body {
-    font-family: 'Arial';
-    background-color: lightskyblue;
-    }   
-    body::before{
-        content: ' ';
-        display: block;
-        background-image: url('5.jpg');
-        background-size:cover ;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.3;
-        position: fixed;
-    }
-    img{
-        height: auto;
-        width: 100%;
-    }
-    .main {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        width: 100%;
-        gap: 10px;
-    }
-    .main2{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        width: 100%;
-        gap: 10px;
-    }
-    .form1{ 
-        background-color: rgba(0, 0, 128, 0.377); 
-        height: 430px; 
-        padding: 15px; 
-        margin-bottom: 100px;
-		margin:0 auto;
-		width:550px;
-		position:relative;
-		top:50px;
-		border:1px solid #262626;
-    }
-    label{
-	    width:100%;
-	    display: flex;	
-	    padding: 10px 0px;
-	}
-    .form1 label span {
-		color:#bbbbbb;
-		font-size:12px;
-		width:100px;
-		text-align:right;
-		padding:5px 20px;
-	}
-    textarea{
-        height: 150px;
-        resize: vertical;
-    }
-        
-    .button {
-        background-color: rgba(0, 0, 128, 0.514);		
-        margin:20px 0px;
-	    padding:4px 7px;	
-	    border:1px;
-	    width:100px;
-        color: white;
-	}
-    footer{
-        color: white;
-        text-decoration: none;
-        background-color: rgba(0, 0, 128, 0.676);
-        padding: 20px;
-        text-align: center;
-    }
-    </style>
 </head>
 <body>
     <div class="main">
@@ -103,19 +24,16 @@
     </div>
     <div class="main2">
         <div>
+            <h3>Lokalizacja:</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.384517850616!2d19.513262077396362!3d41.23518137131959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134fdee0b82f94b3%3A0xd4292fed0be58c7c!2sFafa%20Premium%20Hotel%20%26%20SPA!5e0!3m2!1spl!2spl!4v1722514233250!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>      
         <div class="main3">
             <form>
-                <h3>Formularz kontaktowy</h3>
-                <label>Imię:</label>
-                <input type="text" class="p1"><br>
-                <label>Nazwisko:</label>
-                <input type="text" class="p2"><br>
-                <label>E-mail:</label>
-                <input type="text" class="p3"><br>
-                <label>Napisz do nas:</label>
-                <textarea name="Napisz do nas" class="1"></textarea>
+                <h3>Formularz kontaktowy:</h3>
+                <input type="text" placeholder="Imię..." class="p1"><br>
+                <input type="text" placeholder="Nazwisko..." class="p2"><br>
+                <input type="text" placeholder="E-mail..." class="p3"><br>
+                <textarea name="Napisz do nas" placeholder="Napisz do nas..." class="1"></textarea>
                 <br>
             <input type="button" class="button" value="Prześlij"> 
             <input type="reset" class="button" value="Resetuj">
