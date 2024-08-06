@@ -4,7 +4,7 @@ body {
 body::before{
     content: ' ';
     display: block;
-    background-image: url('5.jpg');
+    background-image: url('assets/5.jpg');
     background-size:cover ;
     z-index: -1;
     width: 100%;
