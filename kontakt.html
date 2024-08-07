@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0; 
     height: 100vh;
-
     }
     *{box-sizing: border-box;}
     body::before{
@@ -32,47 +31,42 @@
     padding: 10px;
     }
     img {
-    width: 12%;
-    min-width: 150px;
-    position: absolute;
-    margin: -25px 50px;
+    width: 100px;
+    min-width: 150px; 
+    position: absolute;  
+    margin: 0px 70px;  
     height: auto;
     }
-    .nav{
-   text-align: center;
-   margin: 20px 0px;
-   display: flex;
-   justify-content: flex-end;
+    .header-menu{
+    margin: 23px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     ul{
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-align: center;
     overflow: hidden;
-    background-color: #0a1977ba;
+
     }
     li{
         float: left;
     }
-    .nav a:hover {
-        background-color: #111;
+    .header-menu a:hover {
+        background-color: rgba(0, 0, 128, 0.918);
+        transition: background-color 2s;   
     }
-    .nav div{
-        color: white;
-        min-width: 13vw;
-        margin: 0px 20px;
-        display: flex; 
-        align-items: center;
-        justify-content: center; 
-    } 
-    .nav a {
+    .header-menu a {
         text-decoration: none;
         font-weight: 600;
-        display: block;
-        padding: 14px 16px;
+        padding: 14px 16px; 
         color: white;
-        text-align: center;
-
+        min-width: 13vw;
+        margin: 0px 40px; 
+        display: block; 
+        width: fit-content;
     }
     .container{ 
         background-color: rgba(0, 0, 128, 0.377); 
@@ -128,7 +122,7 @@
     footer{
     background-color: rgba(0, 0, 128, 0.676);
     text-align: center;
-    height: 80px;
+    height: 60px;
     width: 100%;
     padding: 15px;
     margin: auto 0 0 0;
@@ -144,6 +138,68 @@
     footer a:hover{
         color: lightblue;
     }
+    .mail{
+   margin: 0px 40px;
+}
+p{
+    color: white;
+    margin: 5px 0px;
+}
+    @media only screen and (max-width: 620px){  
+        .header {
+        height: 220px;
+    }
+    .footer{
+        height: auto;
+    }
+    li{
+        flex-direction: column;
+        float: none;
+    }
+    .mobile-container {
+        max-width: 400px;
+        margin: auto;
+        color: white;
+        float: right;
+    }
+      
+    .topnav {
+        background-color: rgba(0, 0, 128, 0.918);
+        position: relative;
+    }
+    .topnav .header-menu {
+        display: none;
+    }
+      
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+      
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        width: 200px; 
+        height: 30px;
+        padding: 0; 
+        text-align: center; 
+        line-height: 60px; 
+        right: 0;
+        top: 0; 
+    }   
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }    
+    .active {
+        background-color: rgba(170, 170, 230, 0.674);
+        color: white;
+    }
+  }  
     @media only screen and (max-width: 991px){
     .container{
         width: 340px;     
@@ -155,22 +211,43 @@
         margin: 10px 0px;;
     }
 }
-    </style>
+</style>
 </head>
 <body>
-    <div class="header">
-        <div>
-            <img src="assets/samolot1.png" alt="logo">
-        </div>      
-        <div class="nav">
-            <ul>
-                <li><a href="html.html"><div>Główna Strona</div></a></li>
-                <li><a href="oferty.html"><div>Oferty</div></a></li>
-                <li><a href="kontakt.html"><div>Kontakt</div></a></li>
-                <li><a href="logowanie.html"><div>Zaloguj się</div></a></li>
-            </ul>             
-        </div>
-        </div>       
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/samolot1.png" alt="logo"></a>
+        </div>   
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+                <ul class="header-menu">
+                    <li>
+                        <a href="oferty.html">Oferty</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="logowanie.html">Zaloguj się</a>
+                    </li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!-- <i class="fa fa-bars"></i> -->
+                </a>
+            </div>
+        </div>   
+    </header> 
+    <script>
+        function myFunction() {
+          var x = document.querySelector(".header-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script> 
         <div class="container">
             <form>
                 <h2>Formularz kontaktowy: </h2>
@@ -190,11 +267,11 @@
             <input type="reset" class="button" value="Resetuj">
             </form>
         </div>
-        <div class="footer">
-            <footer>
-            <a href="mailto:biuropodróży_travelbag@gmail.com">E-mail: biuropodróży_travelbag@gmail.com</a>
-            <br><br><a href="tel:+48 678903245">Kontakt: +48 678903245</a>
-        </footer>   
-    </div>       
+
+    <footer class="footer">           
+        <a href="mailto:biuropodróży_travelbag@gmail.com" class="mail">E-mail: biuropodróży_travelbag@gmail.com</a>
+        <a href="tel:+48 678903245" class="contact">Kontakt: +48 678903245</a>
+        <br><p>Copyright © 2024 TravelBag. Wszelkie prawa zastrzeżone.</p>
+    </footer> 
 </body>
 </html>

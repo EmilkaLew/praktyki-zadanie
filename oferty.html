@@ -6,40 +6,66 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <div class="header">
-        <div>
-            <img src="assets/samolot1.png" class="plane">
-        </div>      
-        <div class="nav">
-            <ul>
-                <li><a href="html.html"><div>Główna Strona</div></a></li>
-                <li><a href="oferty.html"><div>Oferty</div></a></li>
-                <li><a href="kontakt.html"><div>Kontakt</div></a></li>
-                <li><a href="logowanie.html"><div>Zaloguj się</div></a></li>
-            </ul>             
-        </div>
-        </div>       
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/samolot1.png" alt="logo"></a>
+        </div>   
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+                <ul class="header-menu">
+                    <li>
+                        <a href="oferty.html">Oferty</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="logowanie.html">Zaloguj się</a>
+                    </li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!-- <i class="fa fa-bars"></i> -->
+                </a>
+            </div>
+        </div>   
+    </header> 
+    <script>
+        function myFunction() {
+          var x = document.querySelector(".header-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script> 
     <div class="container">
         <div class="oferta" id="o1">
-            <div class="tekst"><a href="opis1.html">Hotel Casa Blue Luxury Resort ***** 3899 zł /os.</a></div>
-           </div>
-           <div class="oferta" id="o2">
-            <div class="tekst"><a href="opis2.html">Hotel Fafa Premium ***** 1696 zł /os.</a></div>
-           </div>
-        
-           <div class="oferta" id="o3">
-            <div class="tekst"><a href="opis3.html">Hotel Summer Village of Hippocrates ***** 2559 zł /os.</a></div>
-           </div>
-        
-           <div class="oferta" id="o4">
-            <div class="tekst"><a href="opis4.html">Hilton Seychelles Labriz Resort Spa ***** 6823 zł /os.</a></div>
-           </div>
+            <div class="tekst">
+                <a href="opis1.html">Hotel Casa Blue Luxury Resort ***** 3899 zł /os.</a>
+            </div>
+        </div>
+        <div class="oferta" id="o2">
+            <div class="tekst">
+                <a href="opis2.html">Hotel Fafa Premium ***** 1696 zł /os.</a>
+            </div>
+        </div>
+        <div class="oferta" id="o3">
+            <div class="tekst">
+                <a href="opis3.html">Hotel Summer Village of Hippocrates ***** 2559 zł /os.</a>
+            </div>
+        </div>      
+        <div class="oferta" id="o4">
+            <div class="tekst">
+                <a href="opis4.html">Hilton Seychelles Labriz Resort Spa ***** 6823 zł /os.</a>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-        <footer>
-            <a href="mailto:biuropodróży_travelbag@gmail.com">E-mail: biuropodróży_travelbag@gmail.com</a>
-            <br><br><a href="tel:+48 678903245">Kontakt: +48 678903245</a>
-        </footer>  
-    </div>   
+    <footer class="footer">           
+        <a href="mailto:biuropodróży_travelbag@gmail.com" class="mail">E-mail: biuropodróży_travelbag@gmail.com</a>
+        <a href="tel:+48 678903245" class="contact">Kontakt: +48 678903245</a>
+        <br><p>Copyright © 2024 TravelBag. Wszelkie prawa zastrzeżone.</p>
+    </footer> 
 </body>
 </html>
