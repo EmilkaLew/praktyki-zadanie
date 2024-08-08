@@ -6,16 +6,30 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <div class="header">
-        <img src="assets/samolot1.png" alt="logo">
-        <h1>Biuro podróży</h1> 
-        <div class="nav">
-            <a href="html.html"><div>Główna Strona</div> </a>
-            <a href="oferty.html"><div>Oferty</div> </a>
-            <a href="kontakt.html"><div>Kontakt</div> </a>
-            <a href="logowanie.html"><div>Zaloguj się</div> </a>
-        </div>
-        </div>      
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/samolot1.png" alt="logo"></a>
+        </div>   
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+                <ul class="header-menu">
+                    <li>
+                        <a href="oferty.html">Oferty</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="logowanie.html">Zaloguj się</a>
+                    </li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!-- <i class="fa fa-bars"></i> -->
+                </a>
+            </div>
+        </div>   
+    </header> 
     <div class="main">
         <div>
             <img src="assets/opis4.jpg" alt="">
@@ -50,9 +64,18 @@
             </form>
         </div>   
     </div>  
-    <footer>
-        <a href="mailto:biuropodróży_travelbag@gmail.com">E-mail: biuropodróży_travelbag@gmail.com</a>
-        <br><a href="tel:+48 678903245">+48 678903245</a>
-    </footer>  
+    <footer class="footer">   
+        <!-- <div class="footer-logo">
+            <a href="index.html"><img src="assets/samolot1.png" alt="logo"></a>
+        </div>  -->
+        <ul class="footer-menu">
+            <li>
+                <a href="mailto:biuropodróży_travelbag@gmail.com" class="mail">Napisz do nas! biuropodróży_travelbag@gmail.com</a>
+            </li>
+            <li>
+                <a href="tel:+48 678903245" class="contact">Skontaktuj się z nami!</a>
+            </li>
+        </ul>                
+    </footer>     
 </body>
 </html>
