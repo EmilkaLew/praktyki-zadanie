@@ -25,13 +25,14 @@ body::before{
     padding: 10px;
 }
 img {
-    width: 100px;
-    min-width: 150px; 
+    width: auto;
     position: absolute;  
-    margin: 0px 70px;  
-    height: auto;
+    margin: -20px 0px; 
+    height: 90px;
+    float: left;
 }
 .header-menu{
+    float: right;
    margin: 23px -10px;
    display: flex;
    justify-content: center;
@@ -55,7 +56,7 @@ ul{
     padding: 14px 16px; 
     color: white;
     min-width: 13vw;
-    margin: 0px 40px; 
+    margin: 0px 20px; 
     display: block; 
     width: fit-content;
 }
@@ -68,6 +69,10 @@ ul{
     flex-direction: column;
     justify-content: center;
     margin: 15px 0px;
+}
+.text{
+    text-align: center;
+    background-color: rgba(230, 186, 12, 0.765);
 }
 #w1 {
     background-image: url('assets/morze.jpg');
@@ -140,7 +145,6 @@ p{
     margin: 8px 0px;
     font-size: 12px;
 }
-
   @media only screen and (max-width: 620px){  
     .footer-menu{
         display: block;
@@ -165,10 +169,9 @@ p{
         height: 60px;
     }
     .topnav {
-        background-color: rgba(0, 0, 128, 0.676);
-       
+        background-color: rgba(0, 0, 128, 0.676);      
     }
-    .topnav .header-menu {
+    .topnav .header-menu {   
         right: 0;
         position: absolute;
         background-color: inherit;
@@ -203,7 +206,6 @@ p{
         width: 100%;
     }
     .topnav button.icon {
-        background: rgba(0, 0, 128, 0.918);
         background-image: url('assets/hamburger.png'); 
         width: 100%;
         height: 100%;
@@ -220,6 +222,8 @@ p{
         top: 0; 
         bottom: 0;
         position: relative;
+        border: tan;
+        background-color: rgba(0, 0, 128, 0.676);
     }   
     .topnav button:hover {
         background-color: lightskyblue;
@@ -230,17 +234,13 @@ p{
     .container{
         grid-template-columns: 100%;
         display: block;
+        width: 100%;
     } 
     .header {
         padding: 10px;
     }
-    img{
-        height: 90px;
-        width: auto;
-        margin: -20px 0px;
-    }
     .wakacje{
-        height: 370px;
+        height: 250px;
     }
     h2{
         padding: 10px;
