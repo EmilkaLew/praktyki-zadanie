@@ -109,9 +109,10 @@ button.icon{
 .footer{
     background-color: rgba(0, 0, 128, 0.676);
     text-align: center;
-    height: 50px;
+    height: 30px;
     width: 100%;
-    padding: 15px;
+    padding: 0px;
+    bottom: 0;
     margin: auto 0 0 0;
 }
 .footer-logo{
@@ -134,12 +135,10 @@ button.icon{
 .footer a:hover{
     color: lightblue;
 }
-.mail{
-   margin: 0px 40px;
-}
 p{
     color: white;
-    margin: 5px 0px;
+    margin: 8px 0px;
+    font-size: 12px;
 }
 
   @media only screen and (max-width: 620px){  
@@ -147,7 +146,6 @@ p{
         display: block;
     }
     .footer{
-        height: auto;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -242,7 +240,7 @@ p{
         margin: -20px 0px;
     }
     .wakacje{
-        height: 100px;
+        height: 370px;
     }
     h2{
         padding: 10px;
