@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
     <style>
     body{
     font-family: 'Arial';
@@ -12,47 +13,44 @@
     }
     *{box-sizing: border-box;}
     body::before{
-    content: ' ';
-    display: block;
-    background-image: url('assets/5.jpg');
-    background-size: cover ;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0.15;
-    position: fixed;
+        content: ' ';
+        display: block;
+        background-image: url('assets/5.jpg');
+        background-size: cover ;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0.15;
+        position: fixed;
     }
     .header {
-    background-color: rgba(0, 0, 128, 0.676);
-    width: 100%;
-    height: 80px;
-    padding: 10px;
+        background-color: rgba(0, 0, 128, 0.676);
+        width: 100%;
+        height: 80px;
+        padding: 10px;
     }
     img {
-    width: 100px;
-    min-width: 150px; 
-    position: absolute;  
-    margin: 0px 70px;  
-    height: auto;
+        width: auto;
+        position: absolute;  
+        margin: -20px 0px; 
+        height: 90px;
+        float: left;
     }
     .header-menu{
-    margin: 23px -10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        float: right;
+        margin: 23px -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    overflow: hidden;
-
-    }
-    li{
-        float: left;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
     }
     .header-menu a:hover {
         background-color: rgba(0, 0, 128, 0.918);
@@ -68,14 +66,16 @@
         display: block; 
         width: fit-content;
     }
+    button.icon{
+        visibility: hidden;
+    }
     .container{ 
         background-color: rgba(0, 0, 128, 0.377); 
-        max-width: 600px;
-        max-height: 800px;
         padding: 15px;  
+        width: 500px;
         color: white;
         border-radius: 8px;
-        margin: 15px auto 80px auto;
+        margin: 50px auto 80px auto;
     }
     label{	   
 	    display: flex;	
@@ -85,13 +85,16 @@
         text-decoration: none;
         color: #a8d0ff;
         font-weight: 700;
+        display: flex;
+        padding: 7px;
+
     }    
     .button {
         background-color: rgba(0, 0, 128, 0.514);		
         margin:10px 0px;
-	    padding:4px 7px;	
+	    padding:7px 0px;	
 	    border:1px;
-	    width:100px;
+	    width:150px;
         color: white;
 	}
     input{
@@ -105,52 +108,25 @@
     h2{
         text-align: center;
     }
-    footer{
-    background-color: rgba(0, 0, 128, 0.676);
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    padding: 15px;
-    margin: auto 0 0 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    }
-    .footer-logo{
-    float: left;
-    margin: -25px 0px;
-    position: absolute;
-    height: 50px;
-}
-.footer-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer a{
-    color: white;
-    text-decoration: none;
-    margin: 0px 40px;
-    font-size: small;
-}
-    footer a:hover{
-        color: lightblue;
-    }
-    .mail{
-        margin: 0px 40px;
+    .footer{
+        background-color: rgba(0, 0, 128, 0.676);
+        text-align: center;
+        height: 30px;
+        width: 100%;
+        padding: 15px;
+        margin: auto 0 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
     p{
-    color: white;
-    margin: 5px 0px;
-}
+        color: white;
+        margin: -13px 0px;
+        font-size: 12px;
+        padding: 8px;
+    }  
     @media only screen and (max-width: 620px){  
-    .header {
-        height: 220px;
-    }
-    .footer{
-        height: auto;
-    }
     li{
         flex-direction: column;
         float: none;
@@ -160,15 +136,28 @@
         margin: auto;
         color: white;
         float: right;
-    }    
-    .topnav {
-        background-color: rgba(0, 0, 128, 0.918);
-        position: relative;
+    }   
+    .header{
+        height: 60px;
     }
-    .topnav .header-menu {
+    .topnav {
+        background-color: rgba(0, 0, 128, 0.676);      
+    }
+    .topnav .header-menu {   
+        right: 0;
+        position: absolute;
+        background-color: inherit;
+        margin: 0 0;
+        width: 100vw;
+        left: 0;
+        top: 60px;
         display: none;
     }
-      
+    button.icon{
+        visibility: visible;
+        margin: 5px 0px;
+
+    }
     .topnav a {
         color: white;
         padding: 14px 16px;
@@ -176,34 +165,48 @@
         font-size: 17px;
         display: block;
     }
-      
-    .topnav a.icon {
-        background: black;
-        display: block;
+    .header-icon{
+        height: initial;
+        width: 26px;
         position: absolute;
-        width: 200px; 
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        object-fit: cover;
+        width: 100%;
+    }
+    .topnav button.icon {
+        background-image: url('assets/hamburger.png'); 
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        width: 30px; 
         height: 30px;
         padding: 0; 
         text-align: center; 
         line-height: 60px; 
         right: 0;
         top: 0; 
+        bottom: 0;
+        position: relative;
+        border: tan;
+        background-color: rgba(0, 0, 128, 0.676);
     }   
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
+    .topnav button:hover {
+        background-color: lightskyblue;
     }    
-    .active {
-        background-color: rgba(170, 170, 230, 0.674);
-        color: white;
-    }
   }  
     @media only screen and (max-width: 991px){ 
         img{
-        height: 100px;
-        width: auto;
-        margin: 0px 50px;
-    }
+            height: 90px;
+            width: auto;
+            margin: -20px 0px;
+        }
     .container{
         width: 300px;
         height: 350px; 
@@ -223,7 +226,6 @@
         </div>   
         <div class="mobile-container">
             <div class="topnav">
-                <a href="#home" class="active"></a>
                 <ul class="header-menu">
                     <li>
                         <a href="oferty.html">Oferty</a>
@@ -235,47 +237,26 @@
                         <a href="logowanie.html">Zaloguj się</a>
                     </li>
                 </ul>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <!-- <i class="fa fa-bars"></i> -->
-                </a>
+                <button href="javascript:void(0);"  class="icon" onclick="myFunction()">
+                <img src="hamburger.png"  class="header-icon" alt="">
+                </button>
             </div>
         </div>   
     </header> 
-    <script>
-        function myFunction() {
-          var x = document.querySelector(".header-menu");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
-        <div class="container">
-            <form>
-                <h2>Logowanie: </h2>
-                <input type="text" placeholder="Nazwa użytkownika..." class="p1"><br>
-                <input type="text" placeholder="Hasło..." class="p2"><br>
-                <p><a href="zapomnienie_hasło.html">Zapomniałeś hasła?</a></p>
-                <p><a href="rejestracja.html">Zarejestruj się</a></p>
-                <div class="lower">
+    <div class="container">
+        <form>
+            <h2>Logowanie: </h2>
+            <input type="text" placeholder="Nazwa użytkownika..." class="p1"><br>
+            <input type="text" placeholder="Hasło..." class="p2"><br>
+            <a href="zapomnienie_hasło.html">Zapomniałeś hasła?</a>
+            <a href="rejestracja.html">Zarejestruj się</a>
+            <div class="lower">
             <input type="button" class="button" value="Zaloguj">
             <input type="reset" class="button" value="Resetuj">
-            </form>
-            </div>
-        </div>
-        <footer class="footer">   
-            <!-- <div class="footer-logo">
-                <a href="index.html"><img src="assets/samolot1.png" alt="logo"></a>
-            </div>  -->
-            <ul class="footer-menu">
-                <li>
-                    <a href="mailto:biuropodróży_travelbag@gmail.com" class="mail">Napisz do nas! biuropodróży_travelbag@gmail.com</a>
-                </li>
-                <li>
-                    <a href="tel:+48 678903245" class="contact">Skontaktuj się z nami!</a>
-                </li>
-            </ul>                
-        </footer>    
+        </form>
+    </div>
+    <footer class="footer">   
+        <p>© Copyright TravelBag 2024</p>     
+    </footer>  
 </body>
 </html>

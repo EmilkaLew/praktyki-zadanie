@@ -9,7 +9,6 @@
     background-color: lightskyblue;
     margin: 0;
     padding: 0; 
-    height: 100vh;
     }
     *{box-sizing: border-box;}
     body::before{
@@ -32,28 +31,26 @@
     padding: 10px;
     }
     img {
-    width: 100px;
-    min-width: 150px; 
-    position: absolute;  
-    margin: 0px 70px;  
-    height: auto;
+        width: auto;
+        position: absolute;  
+        margin: -20px 0px; 
+        height: 90px;
+        float: left;
     }
     .header-menu{
-    margin: 23px -10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        float: right;
+        margin: 23px -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    overflow: hidden;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
 
-    }
-    li{
-        float: left;
     }
     .header-menu a:hover {
         background-color: rgba(0, 0, 128, 0.918);
@@ -65,21 +62,21 @@
         padding: 14px 16px; 
         color: white;
         min-width: 13vw;
-        margin: 0px 40px; 
+        margin: 0px 20px; 
         display: block; 
         width: fit-content;
     }
     button.icon{
         visibility: hidden;
     }
-    .container{ 
-        background-color: rgba(0, 0, 128, 0.377); 
-        max-width: 600px;
-        max-height: 800px;
-        padding: 15px;  
+    form{
+        background-color: rgba(0, 0, 128, 0.377);
+        width: 450px;
+        padding: 15px;    
         color: white;
         border-radius: 8px;
         margin: 15px auto 80px auto;
+        align-items: center;      
     }
     label{
 	    width:100%;
@@ -89,7 +86,7 @@
     .button {
         background-color: rgba(0, 0, 128, 0.514);		
         margin:20px 0px;
-	    padding:4px 7px;	
+	    padding:7px 9px;	
 	    border:1px;
 	    width:100px;
         color: white;
@@ -123,57 +120,25 @@
         box-sizing: border-box;
         padding: 10px;
     }
-    footer{
-    background-color: rgba(0, 0, 128, 0.676);
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    padding: 15px;
-    margin: auto 0 0 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    }
-    .footer-logo{
-    float: left;
-    margin: -25px 0px;
-    position: absolute;
-    height: 50px;
-}
-    .footer-menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer a{
-        color: white;
-        text-decoration: none;
-        margin: 0px 40px;
-        font-size: small;
-    }
-    footer a:hover{
-        color: lightblue;
-    }
-    .mail{
-        margin: 0px 40px;
-    }
-    p{
-        color: white;
-        margin: 8px 0px;
-        font-size: 12px;
-    }
-    @media only screen and (max-width: 620px){  
-        .footer-menu{
-        display: block;
-    }
     .footer{
-        height: auto;
+        background-color: rgba(0, 0, 128, 0.676);
+        text-align: center;
+        height: 30px;
+        width: 100%;
+        padding: 15px;
+        margin: auto 0 0 0;
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
     }
+    p{
+        color: white;
+        margin: -13px 0px;
+        font-size: 12px;
+        padding: 8px;
+    }  
+    @media only screen and (max-width: 620px){  
     li{
         flex-direction: column;
         float: none;
@@ -188,10 +153,9 @@
         height: 60px;
     }
     .topnav {
-        background-color: rgba(0, 0, 128, 0.676);
-       
+        background-color: rgba(0, 0, 128, 0.676);      
     }
-    .topnav .header-menu {
+    .topnav .header-menu {   
         right: 0;
         position: absolute;
         background-color: inherit;
@@ -226,7 +190,6 @@
         width: 100%;
     }
     .topnav button.icon {
-        background: rgba(0, 0, 128, 0.918);
         background-image: url('assets/hamburger.png'); 
         width: 100%;
         height: 100%;
@@ -243,6 +206,8 @@
         top: 0; 
         bottom: 0;
         position: relative;
+        border: tan;
+        background-color: rgba(0, 0, 128, 0.676);
     }   
     .topnav button:hover {
         background-color: lightskyblue;
@@ -250,20 +215,16 @@
   }  
     @media only screen and (max-width: 991px){
         img{
-        height: 90px;
-        width: auto;
-        margin: -20px 0px;
+            height: 90px;
+            width: auto;
+            margin: -20px 0px;
+        }
+        .button{
+            width: 70px;
+            height: 45px;
+            margin: 10px 0px;;
+        }
     }
-    .container{
-        width: 340px;     
-        height: 450px; 
-    }
-    .button{
-        width: 70px;
-        height: 45px;
-        margin: 10px 0px;;
-    }
-}
 </style>
 </head>
 <body>
@@ -310,13 +271,8 @@
             </form>
         </div>
 
-        <footer class="footer">   
-            <!-- <div class="footer-logo">
-                <a href="index.html"><img src="assets/samolot1.png" alt="logo"></a>
-            </div>  -->
-            <div class="footer-menu">
-                <p>© Copyright TravelBag 2024</p>     
-            </div> 
-        </footer>    
+    <footer class="footer">   
+        <p>© Copyright TravelBag 2024</p>     
+    </footer>    
 </body>
 </html>
