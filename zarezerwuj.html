@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <link rel="stylesheet" href="zarezerwuj.css">
+    <link rel="stylesheet" href="kontakt.css"> 
+    <link rel="stylesheet" href="header.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html"><img src="assets/samolot1.png" alt="logo" class="header-logo"></a>
+        </div>   
+        <div class="mobile-container">
+            <div class="topnav">
+                <ul class="header-menu">
+                    <li>
+                        <a href="oferty.html">Oferty</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="logowanie.html">Zaloguj się</a>
+                    </li>
+                </ul>
+                <button href="javascript:void(0);"  class="icon" onclick="myFunction()">
+                <img src="hamburger.png"  class="header-icon" alt="">
+                </button>
+            </div>
+        </div>   
+    </header> 
+        <div class="container">
+            <form>
+                <h2>Formularz rezerwacyjny: </h2>
+                <input type="text" placeholder="Imię..." class="p1"><br>
+                <input type="text" placeholder="Nazwisko..." class="p2"><br>
+                <input type="text" placeholder="E-mail..." class="p3"><br>
+                <textarea name="Napisz do nas" placeholder="Napisz do nas..." class="1"></textarea>
+                <br>
+            <select class="opcja">
+                <option>Wybierz kierunek</option>
+                <option value="Albania">Albania</option>
+                <option value="Grecja">Grecja</option>
+                <option value="Turcja">Turcja</option>
+                <option value="Seszele">Seszele</option>
+            </select>
+            <a href="#">Prześlij</a>
+            <a href="#">Resetuj</a>                 
+            </form>
+        </div>
+
+    <footer class="footer">   
+        <p>© Copyright TravelBag 2024</p>     
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,190 @@
+body{
+    font-family: 'Arial';
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0; 
+    }
+    *{box-sizing: border-box;}
+    body::before{
+    content: ' ';
+    display: block;
+    background-image: url('assets/5.jpg');
+    background-size: cover ;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.15;
+    position: fixed;
+    } 
+    button.icon{
+        visibility: hidden;
+    }
+    form{
+        background-color: rgba(0, 0, 128, 0.377);
+        width: 450px;
+        padding: 15px;    
+        color: rgb(228, 185, 12);
+        border-radius: 8px;
+        margin: 15px auto 80px auto;
+        align-items: center;      
+    }
+    label{
+	    width:100%;
+	    display: flex;	
+	    padding: 10px 0px;
+	}     
+    h2{
+        text-align: center;
+    }
+    textarea{
+        resize: vertical;
+        width: 100%;
+        margin: 10px 0px;    
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.315);
+        box-sizing: border-box;
+        padding: 10px;
+        font: inherit;
+    }
+    input{
+            width: 100%;
+            margin: 10px 0px;       
+            border-radius: 5px;
+            border: 2px solid rgba(0, 0, 0, 0.315);
+            box-sizing: border-box;
+            padding: 10px;
+    }
+    select{
+        width: 100%;
+        border-radius: 5px;
+        margin: 10px 0px;
+        border: 2px solid rgba(0, 0, 0, 0.315);
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .container a {
+        background-color: rgba(0, 0, 128, 0.767);	
+        text-decoration: none;	
+        margin:20px 0px;
+        margin-top: 20px;
+        padding:10px 10px;	
+        border-radius: 5px;
+        width:100px;
+        font-weight: 600;
+        color: white;
+    }
+    .container a:hover{
+        color: rgb(228, 185, 12);
+        transition: background-color 2s;   
+    }
+    .footer{
+        background-color: rgba(0, 0, 128, 0.676);
+        text-align: center;
+        height: 30px;
+        width: 100%;
+        padding: 15px;
+        margin: auto 0 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    p{
+        color: white;
+        margin: -13px 0px;
+        font-size: 12px;
+        padding: 8px;
+    }  
+    @media only screen and (max-width: 620px){  
+    li{
+        flex-direction: column;
+        float: none;
+    }
+    .mobile-container {
+        max-width: 400px;
+        margin: auto;
+        color: white;
+        float: right;
+    }   
+    .header{
+        height: 60px;
+    }
+    .topnav {
+        background-color: rgba(0, 0, 128, 0.676);      
+    }
+    .topnav .header-menu {   
+        right: 0;
+        position: absolute;
+        background-color: inherit;
+        margin: 0 0;
+        width: 100vw;
+        left: 0;
+        top: 60px;
+        display: none;
+    }
+    button.icon{
+        visibility: visible;
+        margin: 5px 0px;
+
+    }
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .header-icon{
+        height: initial;
+        width: 26px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        object-fit: cover;
+        width: 100%;
+    }
+    .topnav button.icon {
+        background-image: url('assets/hamburger.png'); 
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        width: 30px; 
+        height: 30px;
+        padding: 0; 
+        text-align: center; 
+        line-height: 60px; 
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        position: relative;
+        border: tan;
+        background-color: rgba(0, 0, 128, 0.676);
+    }   
+    .topnav button:hover {
+        background-color: lightskyblue;
+    }    
+  }  
+    @media only screen and (max-width: 991px){
+        form{
+            width: 300px;
+        }
+        img{
+            height: 90px;
+            width: auto;
+            margin: -20px 0px;
+        }
+        .button{
+            width: 70px;
+            height: 45px;
+            margin: 10px 0px;;
+        }
+    }
