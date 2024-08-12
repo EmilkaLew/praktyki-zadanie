@@ -213,13 +213,22 @@ body {
     .main{
     overflow: auto;
     grid-template-columns: 100%;
-    } 
+    margin: 40px 0px;
+    display: block;
+    }
+    .maindwa{
+        overflow: auto;
+        grid-template-columns: 100%;
+        margin: 40px 0px;
+        display: block;
+    }
     .main2{
-    overflow: auto;
-    grid-template-columns: 100%;
-    margin: 20px 0px;
+        overflow: auto;
+        grid-template-columns: 100%;
+        margin: 20px 0px;
     } 
     img{
+        position: static;
         height: 90px;
         width: auto;
         margin: -20px 0px;
