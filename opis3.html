@@ -2,13 +2,14 @@
 <html>
 <head>
     <link rel="stylesheet" href="opisy.css">
+    <link rel="stylesheet" href="header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
 </head>
 <body>
     <header class="header">
-        <div class="header-logo">
-            <a href="index.html"><img src="assets/samolot1.png" alt="logo"></a>
+        <div>
+            <a href="index.html"><img src="assets/samolot1.png" alt="logo" class="header-logo"></a>
         </div>   
         <div class="mobile-container">
             <div class="topnav">
@@ -32,38 +33,39 @@
     <div class="container">
         <div class="main">
             <div>
-                <img src="assets/opis3.jpg" alt="">
-                <h2> Dlaczego warto wybrać ten hotel </h2>
-                <p> Greckie wakacje w kameralnej atmosferze? Dlaczego nie! Malownicze otoczenie, zielony ogród, basen i nowocześnie urządzone pokoje – to największe atuty hotelu. Przygotowany z myślą o dorosłych, oferuje bary i restaurację serwującą dania kuchni greckiej i międzynarodowej, a fantastyczna piaszczysta plaża Marmari z wydmami znajdująca się w odległości kilkuminutowego spaceru od hotelu jest idealnym miejscem na błogi relaks w promieniach greckiego słońca. </p>
+                <img class="main-img" src="assets/opis3.jpg" alt="">
             </div>
+            <div class="main-text">
+                <h2> Dlaczego warto wybrać ten hotel </h2>
+                <span> Greckie wakacje w kameralnej atmosferze? Dlaczego nie! Malownicze otoczenie, zielony ogród, basen i nowocześnie urządzone pokoje – to największe atuty hotelu. Przygotowany z myślą o dorosłych, oferuje bary i restaurację serwującą dania kuchni greckiej i międzynarodowej, a fantastyczna piaszczysta plaża Marmari z wydmami znajdująca się w odległości kilkuminutowego spaceru od hotelu jest idealnym miejscem na błogi relaks w promieniach greckiego słońca. </span>
+            </div>
+        </div>
+        <div class="main2">
             <div>
-                <img src="assets/plaża3.jpg" alt="">
+                <img class="main-img" src="assets/plaża3.jpg" alt="">
+            </div>
+            <div class="main-text">
                 <h2>Plaża hotelowa</h2>
                 <li> Marmari </li>
                 <li>publiczna</li>
                 <li>piaszczysta</li>
                 <li>łagodne zejście do morza</li>
                 <li>ok. 700 m od hotelu</li>
+                <div class="main2-button">
+                    <a href="zarezerwuj.html">Rezerwuj</a>
+                </div>
+            </div>                          
         </div>
+       <div class="main3">
+            <div class="navigation">
+                <h3>Lokalizacja:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.6058516730186!2d27.15228487734051!3d36.87585216342885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bdfd46117a317b%3A0x185636f582bd80fc!2zzp7Otc69zr_OtM6_z4fOtc6vzr8gU3VtbWVyIFZpbGxhZ2Ugb2YgSGlwcG9jcmF0ZXMgLSBBZHVsdHMgb25seS4!5e0!3m2!1spl!2spl!4v1722583580245!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>  
+            <div class="weather">
+                <h3>Pogoda:</h3>
+                <div id="ww_6027e4fc1e5cd" v='1.3' loc='id' a='{"t":"horizontal","lang":"pl","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://oneweather.org/warsaw/30_days/" id="ww_6027e4fc1e5cd_u" target="_blank">30 day weather forecast Warsaw</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_6027e4fc1e5cd"></script>
+            </div> 
         </div>
-       <div class="main2">
-        <div>
-            <h3>Lokalizacja:</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.6058516730186!2d27.15228487734051!3d36.87585216342885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bdfd46117a317b%3A0x185636f582bd80fc!2zzp7Otc69zr_OtM6_z4fOtc6vzr8gU3VtbWVyIFZpbGxhZ2Ugb2YgSGlwcG9jcmF0ZXMgLSBBZHVsdHMgb25seS4!5e0!3m2!1spl!2spl!4v1722583580245!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>  
-        <div class="main3">
-            <form>
-                <h3>Formularz kontaktowy:</h3>
-                <input type="text" placeholder="Imię..." class="p1"><br>
-                    <input type="text" placeholder="Nazwisko..." class="p2"><br>
-                    <input type="text" placeholder="E-mail..." class="p3"><br>
-                    <textarea name="Napisz do nas" placeholder="Napisz do nas..." class="1"></textarea>
-                    <br>
-            <input type="button" class="button" value="Prześlij"> 
-            <input type="reset" class="button" value="Resetuj">
-            </form>
-        </div>   
-       </div>
     </div>
     
    <footer class="footer">   

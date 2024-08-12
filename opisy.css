@@ -18,106 +18,67 @@ body {
         opacity: 0.15;
         position: fixed;
     }
-    .header {
-        background-color: rgba(0, 0, 128, 0.676);
-        width: 100%;
-        height: 80px;
-        padding: 10px;
-    }
-    img {
-        width: auto;
-        position: absolute;  
-        margin: -20px 0px; 
-        height: 90px;
-        float: left;
-    }
-    .header-menu{
-        float: right;
-        margin: 23px -10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    ul{
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        overflow: hidden;
-
-    }
-    li{
-        float: left;
-    }
-    .header-menu a:hover {
-        background-color: rgba(0, 0, 128, 0.918);
-        transition: background-color 2s;   
-    }
-    .header-menu a {
-        text-decoration: none;
-        font-weight: 600;
-        padding: 14px 16px; 
-        color: white;
-        min-width: 13vw;
-        margin: 0px 40px; 
-        display: block; 
-        width: fit-content;
-    }
     button.icon{
         visibility: hidden;
     }
-    .main {
-        margin-top: 50px;
+    .container{
         display: grid;
-        grid-template-columns: 50% 50%;
+        width: 100%; 
+        margin: auto;
+        max-width: 1440px;
+        padding: 0px 10px;
+    }
+    .main {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%; 
         width: 100%;
-        gap: 10px;
     } 
     .main-text{
         color: black;
+        max-width: 500px;
+        width: 60%;
     } 
+    h2{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
     .main-img{
         height: auto;
-        width: 300px;
-        margin-bottom: 50px;
-    }
-    .main-dwa{
-        display: grid;
-        margin-top: 100px;
-        grid-template-columns: 50% 50%;
-        width: 100%;
+        margin-left: 30px;      
+        width: 450px;
+        display: flex;
     }
     .main2{
         display: grid;
+        margin-top: 30px;
+        margin-bottom: 30px;
         grid-template-columns: 50% 50%;
         width: 100%;
-        gap: 10px;
-    } 
-    .button {
-        background-color: rgba(0, 0, 128, 0.514);		
+    }
+    .main2-button{
+        margin-top: 55px;
+    }
+    .main2 a {
+        background-color: rgba(0, 0, 128, 0.767);	
+        text-decoration: none;	
         margin:20px 0px;
-        padding:4px 7px;	
-        border:1px;
+        padding:10px 10px;	
+        border-radius: 5px;
         width:100px;
+        font-weight: 600;
         color: white;
     }
-    textarea{
-        resize: vertical;
-        width: 100%;
-        margin: 10px 0px;    
-        border-radius: 5px;
-        border: 2px solid rgba(0, 0, 0, 0.315);
-        box-sizing: border-box;
-        padding: 10px;
-        font: inherit;
+    .main2 a:hover{
+        color: rgb(230, 186, 12);
+        transition: background-color 2s;   
     }
-    input{
-            width: 100%;
-            margin: 10px 0px;       
-            border-radius: 5px;
-            border: 2px solid rgba(0, 0, 0, 0.315);
-            box-sizing: border-box;
-            padding: 10px;
+    .main3{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .navigation{
+        margin-bottom: 20px;
     }
     .footer{
         background-color: rgba(0, 0, 128, 0.676);
@@ -135,6 +96,15 @@ body {
     }
 
     @media only screen and (max-width: 620px){  
+        .main-text{
+            margin-top: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+        .main2-button{
+            margin-top: 30px;
+        }
+
         li{
             flex-direction: column;
             float: none;
@@ -210,41 +180,36 @@ body {
         }    
       }  
 @media only screen and (max-width: 991px){
-    .main{
-    overflow: auto;
-    grid-template-columns: 100%;
-    margin: 40px 0px;
-    display: block;
-    }
-    .maindwa{
-        overflow: auto;
-        grid-template-columns: 100%;
-        margin: 40px 0px;
+    .container{
         display: block;
+        padding: 0px 10px;
+    }
+    .main{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-img{
+        width: 100%;
+        margin: 0;
     }
     .main2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .main3{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .weather{
         overflow: auto;
-        grid-template-columns: 100%;
-        margin: 20px 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .navigation{
+        overflow: auto;
+        width: 100%;
     } 
-    img{
-        position: static;
-        height: 90px;
-        width: auto;
-        margin: -20px 0px;
-    }
-    .button{
-        height: 50px;
-    }
-    input{
-        width: 100%;
-        margin: 5px 0px;
-    }
-    textarea{
-        width: 100%;
-        margin: 5px 0px;
-    }
-    h3{
-    text-align: center;
-    }
     }
