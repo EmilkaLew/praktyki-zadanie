@@ -17,14 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-ul{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  overflow: hidden;
-
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
 }
 .header-menu a:hover {
     background-color: rgba(0, 0, 128, 0.918);
