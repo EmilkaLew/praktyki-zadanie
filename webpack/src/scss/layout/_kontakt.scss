@@ -1,0 +1,144 @@
+button.icon{
+    visibility: hidden;
+}
+form{
+    background-color: rgba(0, 0, 128, 0.377);
+    width: 450px;
+    padding: 15px;    
+    color: rgb(228, 185, 12);
+    border-radius: 8px;
+    margin: 15px auto 80px auto;
+    align-items: center;      
+}
+label{
+    width:100%;
+    display: flex;	
+    padding: 10px 0px;
+}     
+h2{
+    text-align: center;
+}
+textarea{
+    resize: vertical;
+    width: 100%;
+    margin: 10px 0px;    
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    box-sizing: border-box;
+    padding: 10px;
+    font: inherit;
+}
+input{
+    width: 100%;
+    margin: 10px 0px;       
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    box-sizing: border-box;
+    padding: 10px;
+}
+select{
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0px;
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.container-kontakt a {
+    background-color: rgba(0, 0, 128, 0.767);	
+    text-decoration: none;	
+    margin:20px 0px;
+    margin-top: 20px;
+    padding:10px 10px;	
+    border-radius: 5px;
+    width:100px;
+    color: white;
+    font-size: 13px;
+}
+.container-kontakt a:hover{
+    color: rgb(228, 185, 12);
+    transition: background-color 2s;   
+}
+@media only screen and (max-width: 620px){  
+li{
+    flex-direction: column;
+    float: none;
+}
+.mobile-container {
+    max-width: 400px;
+    margin: auto;
+    color: white;
+    float: right;
+}   
+.header{
+    height: 60px;
+}
+.topnav {
+    background-color: rgba(0, 0, 128, 0.676);      
+}
+.topnav .header-menu {   
+    right: 0;
+    position: absolute;
+    background-color: inherit;
+    margin: 0 0;
+    width: 100vw;
+    left: 0;
+    top: 60px;
+    display: none;
+}
+button.icon{
+    visibility: visible;
+    margin: 5px 0px;
+
+}
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav button.icon {
+    background-image: url('../assets/img/hamburger.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 30px; 
+    height: 30px;
+    padding: 0; 
+    text-align: center; 
+    line-height: 60px; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    position: relative;
+    border: tan;
+    background-color: rgba(0, 0, 128, 0.676);
+}   
+.topnav button:hover {
+    background-color: lightskyblue;
+}    
+}  
+@media only screen and (max-width: 991px){
+    form{
+        max-width: 350px;
+        width: 100%;
+    }
+    .container{
+        max-width: 1200px;
+        padding: 0px 20px;
+        margin: 0 auto;
+    }
+    img{
+        height: 90px;
+        width: auto;
+        margin: -20px 0px;
+    }
+    .button{
+        width: 70px;
+        height: 45px;
+        margin: 10px 0px;;
+    }
+}

@@ -1,0 +1,90 @@
+    
+    button.icon{
+        visibility: hidden;
+    }
+    .tekst {
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+    .oferta{
+        background-image: url('../assets/img/egipt.jpg');
+        display: flex;
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;       
+        margin: 20px 0px;  
+        height: 200px;
+        justify-content: center;
+        box-shadow: 6px 6px 10px black;
+            
+    }
+    .container-oferty{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%; 
+        margin: auto;
+        min-height: 40vw;
+        max-width: 1440px;
+        padding: 0px 20px;
+    }
+    .container-oferty a:hover {
+        background-color: rgba(230, 186, 12, 0.708);
+        box-shadow: 5px 5px 10px 8px rgba(230, 186, 12, 0.568);
+        transition: background-color 1s; 
+        border-radius: 5px;  
+    }
+    #o1{
+        background-image: url('../assets/img/egipt.jpg');
+    }      
+    #o2{
+        background-image: url('../assets/img/albania.jpg');
+    }      
+    #o3{
+        background-image: url('../assets/img/grecja.jpg');
+    }       
+    #o4{
+        background-image: url('../assets/img/seszele.jpg');
+    }     
+    .tekst h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: #000000aa;
+        padding: 20px;
+    }
+    .footer{
+        background-color: rgba(0, 0, 128, 0.676);
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+    }
+    p{
+        color: white;
+        margin: 0px;
+        margin-top: 30px;
+        font-size: 12px;
+        padding: 8px;
+    }
+    @media only screen and (max-width: 991px){
+        .oferta{
+            padding: 0;
+        }
+        .container-oferty{
+            grid-template-columns: 100%;
+            display: block;
+            padding: 0px 16px;
+        } 
+        .tekst h2{
+            padding: 1px;     
+            font-size: 18px;   
+            display: flex;    
+        }
+    }

@@ -1,0 +1,159 @@
+.wakacje {
+    display: flex;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0px;
+    margin-bottom: 0;
+}
+.text{
+    text-align: center;
+    color: white;
+    background-color:#000f58b0;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h4{
+    margin: 0;
+}
+#w1 {
+    background-image: url('../assets/img/morze.jpg');
+}
+#w2 {
+    background-image: url('../assets/img/morze2.jpg');
+}
+#w3 {
+    background-image: url('../assets/img/x.jpg');
+}
+#w4{
+    background-image: url('../assets/img/main4.jpeg');
+}
+.container{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%; 
+    margin: auto;
+    min-height: 40vw;
+    max-width: 1440px;
+    padding: 0px 20px;
+}
+h2 {
+    color: white;
+    text-decoration: none;
+    background-color: #000000aa;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+button{
+    color: white; 
+    background-color: #000f58e1;
+    border-radius: 10px;
+    padding: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    cursor:pointer;
+    // opacity: 0;
+    transition: box-shadow 0.3s;
+
+}
+.wrap:hover button{
+    box-shadow: 2px 2px 6px -1px black;
+    // opacity:1;
+}
+.footer{
+    margin-top: 20px;
+}
+  @media only screen and (max-width: 620px){  
+    li{
+        flex-direction: column;
+        float: none;
+    }
+    .mobile-container {
+        max-width: 400px;
+        margin: auto;
+        color: white;
+        float: right;
+    }   
+    .header{
+        height: 60px;
+    }
+    .topnav {
+        background-color: rgba(0, 0, 128, 0.676);      
+    }
+    .topnav .header-menu {   
+        right: 0;
+        position: absolute;
+        background-color: inherit;
+        margin: 0 0;
+        width: 100vw;
+        left: 0;
+        top: 60px;
+        display: none;
+    }
+    button.icon{
+        visibility: visible;
+        margin: 5px 0px;
+
+    }
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .topnav button.icon {
+        background-image: url('../assets/img/hamburger.png'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        width: 30px; 
+        height: 30px;
+        padding: 0; 
+        text-align: center; 
+        line-height: 60px; 
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        position: relative;
+        border: tan;
+        background-color: rgba(0, 0, 128, 0.676);
+    }   
+    .topnav button:hover {
+        background-color: lightskyblue;
+    }    
+  }  
+
+@media only screen and (max-width: 991px){
+    .container{
+        grid-template-columns: 100%;
+        width: 100%;
+    } 
+    .header {
+        padding: 10px;
+    }
+    .wakacje{
+        height: 250px;
+        padding: 0;
+    }
+    h2{
+        padding: 10px;
+        text-align: center;
+    }
+}
