@@ -11,10 +11,16 @@
 }
 .text{
     text-align: center;
-    background-color: rgba(230, 186, 12, 0.765);
+    color: white;
+    background-color:#000f58b0;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 h4{
     margin: 0;
@@ -46,28 +52,31 @@ h2 {
     text-decoration: none;
     background-color: #000000aa;
     padding: 20px;
+    
 }
 button{
-    color: white;
-    background-color: #000000aa;
+    color: white; 
+    background-color: rgba(0, 15, 88, 0.904);
+    border-radius: 10px;
     padding: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    cursor:pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.wrap:hover button{
+    box-shadow: 2px 2px 5px -2px black;
+    opacity:1;
 }
 button.icon{
     visibility: hidden;
 }
 .footer{
-    background-color: rgba(0, 0, 128, 0.676);
-    text-align: center;
-    width: 100%;
-    padding: 8px;
-    margin: auto 0 0 0;
     margin-top: 20px;
-}
-p{
-    color: white;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
 }
   @media only screen and (max-width: 620px){  
     li{
