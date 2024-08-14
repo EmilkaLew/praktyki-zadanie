@@ -68,14 +68,11 @@ button{
     border:none;
     cursor:pointer;
     /* opacity: 0; */
-    transition: opacity 0.3s;
+    transition: box-shadow 0.3s;
 }
 .wrap:hover button{
     box-shadow: 2px 2px 6px -1px black;
     /* opacity:1; */
-}
-button.icon{
-    visibility: hidden;
 }
 .footer{
     margin-top: 20px;
