@@ -75,6 +75,30 @@
                 filename: './kontakt.html' //relative to root of the application
             }),
 
+            new HtmlWebpackPlugin({
+                hash: true,
+                meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
+                title: 'Opis',
+                templateParameters: {
+                    robots: 'index, follow'
+                },
+                template: './src/html/opis.html',
+                minify: false,
+                filename: './opis.html' //relative to root of the application
+            }),
+
+            new HtmlWebpackPlugin({
+                hash: true,
+                meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
+                title: 'Logowanie',
+                templateParameters: {
+                    robots: 'index, follow'
+                },
+                template: './src/html/logowanie.html',
+                minify: false,
+                filename: './logowanie.html' //relative to root of the application
+            }),
+
             new MiniCssExtractPlugin({
                 filename: "[name].css",
             }),

@@ -17,24 +17,18 @@
 </head>
 <body>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/header.html').default %>
-    <div class="container-kontakt">
-        <form class="contact">
-            <h2 class="form">Formularz kontaktowy: </h2>
-            <input type="text" placeholder="Imię..." class="p1"><br>
-            <input type="text" placeholder="Nazwisko..." class="p2"><br>
-            <input type="text" placeholder="E-mail..." class="p3"><br>
-            <textarea name="Napisz do nas" placeholder="Napisz do nas..." class="1"></textarea>
-            <br>
-        <select class="opcja">
-            <option>Wybierz kierunek</option>
-            <option value="Albania">Albania</option>
-            <option value="Grecja">Grecja</option>
-            <option value="Turcja">Turcja</option>
-            <option value="Seszele">Seszele</option>
-        </select><br>
-        <a href="#">Prześlij</a>
-        <a href="#">Resetuj</a> 
+    <div class="container-login">
+        <form class="login">
+            <h2>Logowanie: </h2>
+            <input type="text" placeholder="Nazwa użytkownika..." class="p1"><br>
+            <input type="text" placeholder="Hasło..." class="p2"><br>
+            <a href="zapomnienie_hasło.html">Zapomniałeś hasła?</a>
+            <a href="rejestracja.html">Zarejestruj się</a>
+            <div class="lower">
+            <input type="button" class="button" value="Zaloguj">
+            <input type="reset" class="button" value="Resetuj">
         </form>
+    </div>
     </div>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/footer.html').default %>
 </body>

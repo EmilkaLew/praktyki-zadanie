@@ -1,4 +1,10 @@
     
+    .menu-color{
+        background-color: rgba(0, 0, 128, 0.918);
+        border-radius: 5px;
+        color: rgb(230, 186, 12);
+        transition: background-color 2s, color 2s;
+    }
     button.icon{
         visibility: hidden;
     }
