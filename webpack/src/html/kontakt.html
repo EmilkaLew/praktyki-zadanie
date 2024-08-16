@@ -1,54 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://p.typekit.net/" crossorigin />
+    <link rel="preload" as="style" href="https://use.typekit.net/hrg2ner.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hrg2ner.css" media="print" onload="this.media='all'" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= require('../assets/apple-touch-icon.png') %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= require('../assets/favicon-32x32.png') %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= require('../assets/favicon-16x16.png') %>">
+    <link rel="manifest" href="<%= require('../assets/site.webmanifest') %>">
+    <meta name='robots' content='<%= robots %>' />
 </head>
 <body>
-    <header class="header">
-        <div>
-            <a href="index.html"><img src="../../assets/img/samolot1.png" alt="logo" class="header-logo"></a>
-        </div>   
-        <div class="mobile-container">
-            <div class="topnav">
-                <ul class="header-menu">
-                    <li>
-                        <a href="./oferty.html">Oferty</a>
-                    </li>
-                    <li>
-                        <a href="./kontakt.html">Kontakt</a>
-                    </li>
-                    <li>
-                        <a href="logowanie.html">Zaloguj się</a>
-                    </li>
-                </ul>
-                <button href="javascript:void(0);"  class="icon" onclick="myFunction()">
-                </button>
-            </div>
-        </div>   
-    </header> 
-        <div class="container-kontakt">
-            <form>
-                <h2>Formularz kontaktowy: </h2>
-                <input type="text" placeholder="Imię..." class="p1"><br>
-                <input type="text" placeholder="Nazwisko..." class="p2"><br>
-                <input type="text" placeholder="E-mail..." class="p3"><br>
-                <textarea name="Napisz do nas" placeholder="Napisz do nas..." class="1"></textarea>
-                <br>
-            <select class="opcja">
-                <option>Wybierz kierunek</option>
-                <option value="Albania">Albania</option>
-                <option value="Grecja">Grecja</option>
-                <option value="Turcja">Turcja</option>
-                <option value="Seszele">Seszele</option>
-            </select><br>
-            <a href="#">Prześlij</a>
-            <a href="#">Resetuj</a> 
-            </form>
-        </div>
-
-    <footer class="footer">   
-        <p>© Copyright TravelBag 2024</p>     
-    </footer>    
+    <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/header.html').default %>
+    <div class="container-kontakt">
+        <form>
+            <h2 class="form-h2">Formularz kontaktowy: </h2>
+            <input type="text" placeholder="Imię..." class="p1"><br>
+            <input type="text" placeholder="Nazwisko..." class="p2"><br>
+            <input type="text" placeholder="E-mail..." class="p3"><br>
+            <textarea name="Napisz do nas" placeholder="Napisz do nas..." class="1"></textarea>
+            <br>
+        <select class="opcja">
+            <option>Wybierz kierunek</option>
+            <option value="Albania">Albania</option>
+            <option value="Grecja">Grecja</option>
+            <option value="Turcja">Turcja</option>
+            <option value="Seszele">Seszele</option>
+        </select><br>
+        <a href="#">Prześlij</a>
+        <a href="#">Resetuj</a> 
+        </form>
+    </div>
+    <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/footer.html').default %>
 </body>
 </html>

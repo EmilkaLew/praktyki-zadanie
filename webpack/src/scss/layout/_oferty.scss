@@ -52,26 +52,13 @@
     #o4{
         background-image: url('../assets/img/seszele.jpg');
     }     
-    .tekst h2 {
+    .oferty-h2 {
         color: white;
         font-size: 30px;
         font-weight: 600;
         text-decoration: none;
         background-color: #000000aa;
         padding: 20px;
-    }
-    .footer{
-        background-color: rgba(0, 0, 128, 0.676);
-        text-align: center;
-        width: 100%;
-        padding: 0px;
-    }
-    p{
-        color: white;
-        margin: 0px;
-        margin-top: 30px;
-        font-size: 12px;
-        padding: 8px;
     }
     @media only screen and (max-width: 991px){
         .oferta{
@@ -82,7 +69,7 @@
             display: block;
             padding: 0px 16px;
         } 
-        .tekst h2{
+        .oferty-h2{
             padding: 1px;     
             font-size: 18px;   
             display: flex;    
