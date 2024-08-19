@@ -1,63 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>
-        <%= htmlWebpackPlugin.options.title %>
-    </title>
-    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
-    <link rel="preconnect" href="https://p.typekit.net/" crossorigin />
-    <link rel="preload" as="style" href="https://use.typekit.net/hrg2ner.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/hrg2ner.css" media="print" onload="this.media='all'" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= require('../assets/apple-touch-icon.png') %>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= require('../assets/favicon-32x32.png') %>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= require('../assets/favicon-16x16.png') %>">
-    <link rel="manifest" href="<%= require('../assets/site.webmanifest') %>">
-    <meta name='robots' content='<%= robots %>' />
-</head>
 <body>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/header.html').default %>
-    <div class="container-description">
-        <div class="main">
-            <div>
-                <img class="main-img" src="../assets/img/opis1.jpg" alt="">
-            </div>
-            <div class="main-text"> 
-                <h2> Dlaczego warto wybrać ten hotel </h2>
-                <span> Hotel tylko dla Gości powyżej 12. roku życia w znanym kurorcie Marsa Alam, jest doskonałą opcją dla wszystkich, którzy cenią sobie komfortowy wypoczynek. Na miejscu 2 restauracje, 3 bary, 3 baseny, a także taras z zapierającym dech widokiem na morze. W ciągu dnia możesz spędzić czas na hotelowej plaży, poćwiczyć jogę lub pilates oraz zagrać w siatkówkę plażową, a wieczorem zaszaleć podczas animacji dla dorosłych. Po aktywnym dniu spędzonym w promieniach egipskiego słońca, zrelaksuj się w przestronnych i nowocześnie urządzonych pokojach. </span>
-            </div>             
-        </div>
-        <div class="main2">
-            <div>
-                <img class="main-img" src="../assets/img/plaża1.jpg" alt="">
-            </div>
-            <div class="main-text">
-                <h2>Plaża hotelowa</h2>
-                <ul>
-                    <li>bezpośrednio przy hotelu </li>
-                    <li>piaszczysto-żwirowa</li>
-                    <li>blisko brzegu rafa koralowa</li>
-                    <li>zalecane obuwie ochronne</li>
-                    <li>bezpłatne parasole, leżaki, materace</li>
-                    <li>bezpłatne parasole, leżaki, materace</li>
-                    <li>bezpłatne parasole, leżaki, materace</li>
-                </ul>
-                <div class="main2-button">
-                    <a href="zarezerwuj.html">Rezerwuj</a>
-                </div>
-            </div>
-        </div>
-        <div class="main3">  
-            <div class="navigation">
-                <h3>Lokalizacja:</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0997850037593!2d34.685896576471364!3d25.434927277558554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15b4a5f504bdd4fd%3A0x304b7faf56118218!2sCasa%20Blue%20Resort!5e0!3m2!1spl!2spl!4v1722512381762!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="weather">
-                <h3>Pogoda:</h3>
-                <div id="ww_6027e4fc1e5cd" v='1.3' loc='id' a='{"t":"horizontal","lang":"pl","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://oneweather.org/warsaw/30_days/" id="ww_6027e4fc1e5cd_u" target="_blank">30 day weather forecast Warsaw</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_6027e4fc1e5cd"></script>
-            </div>                            
-        </div>
-    </div>   
+    <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/opis.html').default %>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/footer.html').default %>
 </body>
 </html>

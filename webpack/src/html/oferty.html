@@ -1,52 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>
-        <%= htmlWebpackPlugin.options.title %>
-    </title>
-    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
-    <link rel="preconnect" href="https://p.typekit.net/" crossorigin />
-    <link rel="preload" as="style" href="https://use.typekit.net/hrg2ner.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/hrg2ner.css" media="print" onload="this.media='all'" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= require('../assets/apple-touch-icon.png') %>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= require('../assets/favicon-32x32.png') %>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= require('../assets/favicon-16x16.png') %>">
-    <link rel="manifest" href="<%= require('../assets/site.webmanifest') %>">
-    <meta name='robots' content='<%= robots %>' />
-</head>
 <body>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/header.html').default %>
-    <div class="container-oferty">
-        <a href="./opis.html"> 
-            <div class="oferta" id="o1">
-            <div class="tekst">
-                <h2 class="oferty-h2">Hotel Casa Blue Luxury Resort ***** 3899 zł /os.</h2>
-            </div>
-            </div>
-        </a>
-       <a href="./opis.html">
-            <div class="oferta" id="o2">
-            <div class="tekst">
-                <h2 class="oferty-h2">Hotel Fafa Premium ***** 1696 zł /os.</h2>
-            </div>
-            </div>
-        </a>      
-        <a href="./opis.html">
-            <div class="oferta" id="o3">
-            <div class="tekst">
-                <h2 class="oferty-h2">Hotel Summer Village of Hippocrates ***** 2559 zł /os.</h2>
-            </div>
-            </div> 
-        </a>       
-        <a href="./opis.html">
-            <div class="oferta" id="o4">
-            <div class="tekst">
-                <h2 class="oferty-h2">Hilton Seychelles Labriz Resort Spa ***** 6823 zł /os.</h2>
-            </div>
-            </div>
-        </a>     
-    </div>
+    <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/oferty.html').default %>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/footer.html').default %>
 </body>
 </html>

@@ -1,14 +1,12 @@
 
-button.icon{
-    visibility: hidden;
-}
+
 .login{
     background-color: rgba(0, 0, 128, 0.377); 
-    padding: 15px;  
-    width: 500px;
-    color: rgb(228, 185, 12);
+    padding: 20px;  
     border-radius: 8px;
-    margin: 50px auto 80px auto;
+    margin: 30px auto 80px auto;
+    max-width: 450px;
+    height: 300px;
     label{	   
         display: flex;	
         padding: 10px 0px;
@@ -16,18 +14,48 @@ button.icon{
     h2{
         text-align: center;
         font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: rgb(228, 185, 12);
     }
 }  
+
 .container-login{
-    max-width: 1440px;
-    padding: 0px 20px;
+    max-width: 1400px;
+    padding: 0px 30px;
     margin: 0 auto;
+    .ps{
+        margin-right: 88px;
+    }
     a{
         text-decoration: none;
-        color: rgb(228, 185, 12);
+        color: white;
         font-weight: 700;
-        display: flex;
         padding: 7px;
+        margin-right: 0;
+    }
+    a:hover{
+        color: rgb(228, 185, 12);  
+    }
+    .lower{
+        a{ 
+            background-color: rgba(0, 0, 128, 0.767);	
+            text-decoration: none;	
+            margin:20px 0px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding:10px 10px;	
+            border-radius: 8px;
+            width: 100px;
+            color: white;
+            font-size: 13px; 
+            display: block;
+            text-align: center; 
+            width: 100%;   
+        }
+        a:hover{
+            color: rgb(228, 185, 12);  
+        }
     }
 }
 input{
@@ -38,33 +66,15 @@ input{
     box-sizing: border-box;
     padding: 10px;
 }
-.button {
-        background-color: rgba(0, 0, 128, 0.514);		
-        margin:10px 0px;
-        font-weight: 600;
-        padding:7px 0px;	
-        border:1px;
-        width:150px;
-        color: rgb(228, 185, 12);
-}
 @media only screen and (max-width: 991px){ 
-    img{
-        height: 90px;
-        width: auto;
-        margin: -20px 0px;
-    }
-    .login{
-        max-width: 400px;
-        width: 270px;
-    }
     .container-login{
-        max-width: 1200px;
-        padding: 0px 20px;
-        margin: 0 auto;
-    }
-    .button{
-        width: 70px;
-        height: 45px;
+        .login{
+            height: 330px;
+        }
+        a{
+            display: grid;
+            width: 100%;
+        }
     }
 
 }

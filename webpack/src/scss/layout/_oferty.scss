@@ -1,5 +1,5 @@
 
-    .oferta{
+    .offer{
         background-image: url('../assets/img/egipt.jpg');
         display: flex;
         padding: 100px;
@@ -9,7 +9,7 @@
         align-items: center;
         flex-direction: column;
         width: 100%;       
-        margin: 20px 0px;  
+        margin: 20px 0px; 
         height: 200px;
         justify-content: center;
         box-shadow: 6px 6px 10px black;
@@ -22,12 +22,13 @@
         a{
             text-decoration: none;
         }
-        .tekst {
+        .text {
             text-align: center;
+            width: 100%;
         }
         h2 {
             color: white;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 600;
             text-decoration: none;
             background-color: #000000aa;
@@ -35,7 +36,7 @@
         }
             
     }
-    .container-oferty{
+    .container-offers{
         gap: 20px;
         display: grid;
         grid-template-columns: 100%;
@@ -68,15 +69,14 @@
         background-image: url('../assets/img/seszele.jpg');
     }     
     @media only screen and (max-width: 991px){
-        .oferta{
+        .offer{
             padding: 0;
             h2{
-                padding: 1px;     
-                font-size: 18px;   
-                display: flex;    
+                padding: 5px;     
+                font-size: 18px;    
             }
         }
-        .container-oferty{
+        .container-offers{
             grid-template-columns: 100%;
             display: block;
             padding: 0px 16px;
