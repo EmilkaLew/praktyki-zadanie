@@ -21,7 +21,6 @@
 }  
 
 .container-login{
-    max-width: 1400px;
     padding: 0px 30px;
     margin: 0 auto;
     .ps{
@@ -45,8 +44,7 @@
             margin-top: 10px;
             margin-bottom: 30px;
             padding:10px 10px;	
-            border-radius: 8px;
-            width: 100px;
+            border-radius: 8px;          
             color: white;
             font-size: 13px; 
             display: block;
@@ -66,10 +64,12 @@ input{
     box-sizing: border-box;
     padding: 10px;
 }
-@media only screen and (max-width: 991px){ 
+@media only screen and (max-width: 500px){ 
     .container-login{
-        .login{
-            height: 330px;
+        .lower{
+            a{
+                margin: 10px 0px 10px;
+            }
         }
         a{
             display: grid;
