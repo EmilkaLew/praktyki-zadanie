@@ -99,6 +99,30 @@
                 filename: './logowanie.html' //relative to root of the application
             }),
 
+            new HtmlWebpackPlugin({
+                hash: true,
+                meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
+                title: 'Zmiana hasła',
+                templateParameters: {
+                    robots: 'index, follow'
+                },
+                template: './src/html/zmiana_hasla.html',
+                minify: false,
+                filename: './zmiana_hasla.html' //relative to root of the application
+            }),
+
+            new HtmlWebpackPlugin({
+                hash: true,
+                meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
+                title: 'Rejestracja',
+                templateParameters: {
+                    robots: 'index, follow'
+                },
+                template: './src/html/rejestracja.html',
+                minify: false,
+                filename: './rejestracja.html' //relative to root of the application
+            }),
+
             new MiniCssExtractPlugin({
                 filename: "[name].css",
             }),
